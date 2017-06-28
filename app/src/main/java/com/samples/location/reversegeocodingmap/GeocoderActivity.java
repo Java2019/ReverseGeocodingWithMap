@@ -92,7 +92,7 @@ public class GeocoderActivity extends Activity {
                             "\n\tPostalCode: " + address.getPostalCode()
                     );
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT).show();
             }
         }else {
